@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Mohave';
+  src: font-url("/../fonts/Mohave.otf") format("truetype"); }
+html, body {
+  margin: 0;
+  padding: 0; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  width: 100%;
+  margin: 0 0 200px;
+  /* bottom = footer height */ }
+
+/* Overridden Foundation Classes */
+.row {
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+/* End of Overridden Foundation Classes */
+/* General Classes */
+.white_text {
+  color: #ccc; }
+
+.s-m-i {
+  font-size: 2em;
+  color: #555;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block; }
+
+/* End of General Classes */
+.container {
+  height: auto;
+  min-height: 85%;
+  background-color: #cc0000;
+  background: url("../img/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  bottom: 0; }
+  .container .main_content {
+    width: 100%;
+    padding-top: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%; }
+    .container .main_content .vertical_center {
+      height: 100%;
+      display: table; }
+      .container .main_content .vertical_center .raise_your_voice {
+        display: table-cell;
+        vertical-align: middle;
+        font-family: 'Indie Flower', cursive;
+        font-size: 5.8em;
+        color: #ccc;
+        text-align: center;
+        line-height: 0.8em; }
+    .container .main_content .recent_protest {
+      width: auto;
+      min-width: 200px;
+      max-width: 250px;
+      height: auto;
+      min-height: 220px;
+      margin: 10px auto;
+      background-color: rgba(0, 0, 0, 0.2); }
+    .container .main_content .links_box {
+      height: 100%; }
+      .container .main_content .links_box .top_box {
+        width: 100%;
+        height: 50%; }
+        .container .main_content .links_box .top_box h3.all_protests_header {
+          margin-top: 50px; }
+      .container .main_content .links_box .bottom_box {
+        width: 100%;
+        height: 50%;
+        position: relative; }
+        .container .main_content .links_box .bottom_box a.register_button {
+          display: block;
+          background-color: #007a7a;
+          padding: 0 80px;
+          width: 80%;
+          max-width: 250px;
+          margin: 0 auto;
+          border: 0;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 1.3em;
+          line-height: 50px;
+          color: #ccc;
+          text-align: center; }
+  .container .layer {
+    background-color: rgba(204, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .container header.header {
+    width: 100%;
+    height: 50px;
+    background-color: #f2f2f2;
+    position: fixed;
+    top: 0;
+    z-index: 50; }
+    .container header.header h1.header {
+      font-size: 2em;
+      line-height: 50px;
+      color: #555;
+      font-family: 'Mohave'; }
+    .container header.header .menu_icon {
+      font-size: 2em;
+      color: #555;
+      padding: 0 10px;
+      line-height: 50px; }
+    .container header.header a.sign_in_button {
+      line-height: 50px;
+      background-color: #ccc;
+      padding: 5px 15px;
+      border: 0;
+      border-radius: 10px;
+      color: #333; }
+    .container header.header .search {
+      height: 30px;
+      margin: 10px 0;
+      line-height: 30px; }
+    .container header.header input[type="submit"].search {
+      background-color: #555; }
+
+footer.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: auto;
+  min-height: 200px;
+  width: 100%;
+  padding-top: 10px;
+  background-color: #f2f2f2; }
+  footer.footer .contactmymp {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-size: 1.7em;
+    color: #555; }
+  footer.footer .pollietweets {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.7em;
+    color: #555; }
+  footer.footer .protestaus {
+    font-family: 'Mohave', cursive;
+    font-weight: 200;
+    font-size: 1.7em;
+    color: #555; }
+  footer.footer hr.footer_hr {
+    width: 85%;
+    border: 1px solid #ccc;
+    margin: 10px auto; }
+  footer.footer .copyright {
+    padding: 10px 0;
+    font-size: 0.8em;
+    color: #333; }
+
+/*# sourceMappingURL=styles.css.map */

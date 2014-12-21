@@ -1,0 +1,221 @@
+$white: #f2f2f2;
+$red: #cc0000;
+$emerald: #007a7a;
+$bright_green: #2cae34;
+$pale_grey: #ccc;
+$med_grey: #555;
+$dark_grey: #333;
+
+@font-face {
+   font-family: 'Mohave';
+   src: font-url('/../fonts/Mohave.otf') format('truetype');
+}
+
+html, body {
+   margin: 0;
+   padding: 0;
+
+}
+html {
+   position: relative;
+   min-height: 100%;
+}
+
+body {
+   width: 100%;
+   margin: 0 0 200px; /* bottom = footer height */
+}
+
+
+*:not(body):not(html) {
+   //box-sizing:border-box;
+   //border: 1px dashed blue;
+}
+
+/* Overridden Foundation Classes */
+
+.row {
+   max-width: 100%;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+}
+
+/* End of Overridden Foundation Classes */
+
+/* General Classes */
+
+.white_text {
+   color: $pale_grey;
+}
+.s-m-i {
+   font-size: 2em;
+   color: $med_grey;
+   line-height: 50px;
+   text-align: center;
+   display: inline-block;
+}
+
+/* End of General Classes */
+
+.container {
+   height: auto;
+   min-height: 85%;
+   background-color: $red;
+   background:url('../img/background.jpg') no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   position: relative;
+   top: 0;
+   bottom: 0;
+   .main_content {
+      width: 100%;
+      padding-top: 50px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      .vertical_center {
+         height: 100%;
+         display: table;
+         .raise_your_voice {
+            display: table-cell;
+            vertical-align: middle;
+            font-family: 'Indie Flower', cursive;
+            font-size: 5.8em;
+            color: $pale_grey;
+            text-align: center;
+            line-height: 0.8em;
+         }
+      }
+
+      .recent_protest {
+         width: auto;
+         min-width: 200px;
+         max-width: 250px;
+         height: auto;
+         min-height: 220px;
+         margin: 10px auto;
+         background-color: rgba(0,0,0,0.2);
+      }
+      .links_box {
+         height: 100%;
+         .top_box {
+            width: 100%;
+            height: 50%;
+            h3.all_protests_header {
+               margin-top: 50px;
+            }
+         }
+         .bottom_box {
+            width: 100%;
+            height: 50%;
+            position: relative;
+            a.register_button {
+               display: block;
+               background-color: $emerald;
+               padding: 0 80px;
+               width: 80%;
+               max-width: 250px;
+               margin: 0 auto;
+               border: 0;
+               font-family: 'Open Sans', sans-serif;
+               font-size: 1.3em;
+               line-height: 50px;
+               color: $pale_grey;
+               text-align: center;
+            }
+         }
+      }
+
+
+   }
+   .layer {
+      background-color: rgba(204,0,0, 0.8);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+   }
+
+   header.header {
+      width: 100%;
+      height: 50px;
+      background-color: $white;
+      position: fixed;
+      top: 0;
+      z-index: 50;
+      h1.header {
+         font-size: 2em;
+         line-height: 50px;
+         color: $med_grey;
+         font-family: 'Mohave';
+      }
+      .menu_icon {
+         font-size: 2em;
+         color: $med_grey;
+         padding: 0 10px;
+         line-height: 50px;
+      }
+      a.sign_in_button {
+         line-height: 50px;
+         background-color: $pale_grey;
+         padding: 5px 15px;
+         border: 0;
+         border-radius: 10px;
+         color: $dark_grey;
+      }
+      .search {
+         height: 30px;
+         margin: 10px 0;
+         line-height: 30px;
+      }
+      input[type="submit"].search {
+         background-color: $med_grey;
+      }
+   }
+}
+
+
+
+footer.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   height: auto;
+   min-height: 200px;
+   width: 100%;
+   padding-top: 10px;
+   background-color: $white;
+   .contactmymp {
+      font-family: 'Helvetica Neue', sans-serif;
+      font-weight: 100;
+      font-size: 1.7em;
+      color: $med_grey;
+   }
+   .pollietweets {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 1.7em;
+      color: $med_grey;
+   }
+   .protestaus {
+      font-family: 'Mohave', cursive;
+      font-weight: 200;
+      font-size: 1.7em;
+      color: $med_grey;
+   }
+   hr.footer_hr {
+      width: 85%;
+      border: 1px solid $pale_grey;
+      margin: 10px auto;
+   }
+   .copyright {
+      padding: 10px 0;
+      font-size: 0.8em;
+      color: $dark_grey;
+   }
+}
