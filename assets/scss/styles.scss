@@ -60,23 +60,25 @@ body {
 
 .container {
    height: auto;
-   min-height: 85%;
-   background-color: $red;
-   background:url('../img/background.jpg') no-repeat center center fixed;
+   min-height: 100%;
+   background: $red url('../img/background.jpg') no-repeat top left;
+   //no-repeat center center fixed;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
    position: relative;
    top: 0;
-   bottom: 0;
-   .main_content {
+   /* bottom: 0; */
+      .main_content {
       width: 100%;
-      padding-top: 50px;
+      padding-top: 100px;
       position: absolute;
       top: 0;
       bottom: 0;
-      height: 100%;
+      height: auto;
+      min-height: 100%;
+      overflow: auto;
       .vertical_center {
          height: 100%;
          display: table;
@@ -90,7 +92,8 @@ body {
             line-height: 0.8em;
          }
       }
-
+      .protests {
+      }
       .recent_protest {
          width: auto;
          min-width: 200px;
@@ -98,7 +101,7 @@ body {
          height: auto;
          min-height: 220px;
          margin: 10px auto;
-         background-color: rgba(0,0,0,0.2);
+         background-color: rgba(0,0,0,0.4);
       }
       .links_box {
          height: 100%;
@@ -107,6 +110,7 @@ body {
             height: 50%;
             h3.all_protests_header {
                margin-top: 50px;
+               text-align: center;
             }
          }
          .bottom_box {
@@ -138,7 +142,7 @@ body {
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      min-height: 100%;
    }
 
    header.header {
@@ -230,20 +234,66 @@ footer.footer {
 @media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 // Small & medium screens
-@media only screen and (min-width: 320px) and (max-width: 768px) { 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
 
    header.header .row .columns h1.header {
       font-size: 1.5em;
    }
-}
 
+}
+// Small & medium screens - max-width 1024px
+@media only screen and (max-width: 64em) {
+
+
+   .container {
+   height: auto;
+   min-height: 100%;
+
+      .main_content {
+         height: auto;
+         min-height: 100%;
+         padding-top: 50px;
+
+         .vertical_center {
+            height: auto;
+
+
+            h2.raise_your_voice { // move Raise Your Voice to top of main_content div
+               padding-top: 15px;
+               vertical-align: top;
+            }
+         }
+
+         .links_box {
+            margin-top: -40px;
+            height: auto;
+            .top_box, .bottom_box {
+               display: inline-block;
+               width: 48%;
+               height: auto;
+            }
+
+         }
+
+      }
+   }
+
+
+}
 // Medium screens
 @media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 // Large screens
-@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) {
+.container {
+   min-height: 85%;
+   .main_content {
+      overflow: initial; // default value
+   }
+}}
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
