@@ -123,10 +123,11 @@ body {
     .container header.header a.sign_in_button {
       line-height: 50px;
       background-color: #ccc;
-      padding: 5px 15px;
+      padding: 5px 10px;
       border: 0;
       border-radius: 10px;
-      color: #333; }
+      color: #333;
+      margin: 0 auto; }
     .container header.header .search {
       height: 30px;
       margin: 10px 0;
@@ -166,5 +167,18 @@ footer.footer {
     padding: 10px 0;
     font-size: 0.8em;
     color: #333; }
+
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  header.header .row .columns h1.header {
+    font-size: 1.5em; } }
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 1025px, large screens */
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xxlarge screens */
 
 /*# sourceMappingURL=styles.css.map */
