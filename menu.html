@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Menu</title>
+
+   <link rel="stylesheet" href="assets/css/jquery.slidermenu2.css">
+   <link rel="stylesheet" href="assets/css/general2.css">
+   <link rel="stylesheet" href="assets/css/menu_theme-long_menu.css">
+   <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+
+</head>
+<body>
+<div id="slider" class="right"></div>
+
+
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="assets/js/jquery.slidermenu2.js"></script>
+<script>
+$("#slider").slidermenu( {
+   menuItemTitles: ["Home", "About", "Source Code",  "GitHub", "Read Me", "Help", "Contact"],
+   menuItemIcons: ["icon-home", "icon-info", "icon-code", "icon-github", "icon-file-text-alt", "icon-question-sign", "icon-envelope"],
+   menuItemLinks: ["slidermenu.html", "about.html", "sourcecode.html", "github.html", "readme.html", "help.html", "contact.html"]
+});
+</script>
+</body>
+</html>
