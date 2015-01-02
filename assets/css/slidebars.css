@@ -1,0 +1,145 @@
+/*
+Global Styles
+======================================
+*/
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*
+Layout
+======================================
+*/
+
+.wrap {
+	position: relative;
+}
+
+
+/*
+Masthead
+======================================
+*/
+
+.menu-link {
+	position: relative;
+	font-size: 2em;
+	line-height: 50px;
+}
+
+.menu-link:link,
+.menu-link:visited,
+.menu-link:hover,
+.menu-link:active {
+	color: #555;
+	padding-right: 15px;
+}
+
+.subtitle {
+	text-align: center;
+	font-size: 1.125em;
+	margin: .5em 0;
+}
+
+.btn-list {
+	margin: 3em 0;
+	text-align: center;
+}
+
+.btn-list li {
+	display: inline-block;
+}
+
+.btn-list li:first-of-type {
+	margin-right: 1em;
+}
+
+.btn {
+	padding: 1em .5em;
+	text-align: center;
+	border-radius: 6px;
+}
+
+.btn:link,
+.btn:visited {
+	background: #25B89A;
+	color: #fff;
+}
+
+.btn:hover,
+.btn:active {
+	background: #16a085;
+}
+
+/*
+Nav Panel
+======================================
+*/
+
+.panel {
+	background: #333;
+	z-index: 9999;
+	border: 0;
+	position: fixed;
+	right: -15.625em; /*or width of your navigation panel*/
+	width: 15.625em; /*should match the above value*/
+}
+
+.panel a {
+	display: block;
+	/* padding: 1em; */
+}
+
+.panel ul {
+	list-style: none;
+}
+
+.panel a:link,
+.panel a:visited {
+	color: #fff;
+}
+
+.panel a:hover,
+.panel a:active {
+	/* background: #25B89A; */
+}
+
+.nav-icon {
+	margin-right: 6px;
+}
+
+/*
+Helper Classes
+-----------------------------------
+*/
+
+.hide {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*
+Small Screens
+-----------------------------------
+*/
+
+@media only screen and (max-width: 31.25em) {
+
+	.btn-list li {
+		font-size: .75em;
+	}
+
+	.btn-list li:first-of-type {
+		margin-right: .2em;
+	}
+
+}
